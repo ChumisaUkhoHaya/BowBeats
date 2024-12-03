@@ -1,0 +1,22 @@
+{
+    "rewrites": [
+      {
+        "source": "/BowBeats/:path*",
+        "destination": "/index.html"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/BowBeats/assets/(.*)",
+        "headers": { "cache-control": "public, max-age=31536000, immutable" },
+        "continue": true
+      },
+      {
+        "handle": "filesystem"
+      },
+      {
+        "src": "/.*",
+        "dest": "/index.html"
+      }
+    ]
+  }
