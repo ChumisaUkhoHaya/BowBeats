@@ -1,5 +1,5 @@
 {
-  "name": "BowBeats",
+  "name": "bowbeats",
   "private": true,
   "version": "0.0.0",
   "homepage": ".",
@@ -12,6 +12,8 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "express": "^5.1.0",
+    "module_name": "^1.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.27.0"
